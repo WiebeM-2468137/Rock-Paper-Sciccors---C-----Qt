@@ -24,14 +24,14 @@ public:
 class HumanPlayer : public Player
 {
 public:
-    HumanPlayer(const std::string &name);
+    HumanPlayer(const std::string &name) : Player(name) {};
     Move chooseMove() const override;
 };
 
 class BotPlayer : public Player
 {
 public:
-    BotPlayer(const std::string &name);
+    BotPlayer(const std::string &name) : Player(name) {};
     Move chooseMove() const override;
 };
 
